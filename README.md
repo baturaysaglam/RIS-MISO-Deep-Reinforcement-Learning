@@ -24,10 +24,12 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
     pip install -r requirements.txt
     ```
 **2. Reproduce the results provided in the paper**
-   * Simply input the figure number in the paper.
+   * Usage:
    ```
     usage: reproduce.py [-h] [--figure_num {4,5,6,7,8,9,10,11,12}]
-
+  ```
+  * Optional Arguments:
+  ```
     optional arguments:
     -h, --help            show this help message and exit
     --figure_num {4,5,6,7,8,9,10,11,12} Choose one of figures from the paper to reproduce
