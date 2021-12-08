@@ -4,6 +4,10 @@ PyTorch implementation of the paper [*Reconfigurable Intelligent Surface Assiste
 
 The algorithm is tested, and the results are reproduced on a custom RIS assisted Multiuser MISO environment. 
 
+### Results
+
+Reproduced figures are found under *./Figures/Evaluation* and *./Learning Figures* respective to the figure number in the paper. Reproduced learning and evaluation curves are found under *./Learning Curves*. The hyper-parameter setting follows the one presented in the paper except for the variance of AWGN, scale of the Rayleigh distribution and number of hidden units in the networks. These values are tuned to match the original results. 
+
 ### Run
 **0. Requirements**
   ```bash
