@@ -4,7 +4,7 @@ PyTorch implementation of the paper [*Reconfigurable Intelligent Surface Assiste
 
 The algorithm is tested, and the results reproduced on a custom RIS assisted Multiuser MISO environment. 
 
-### Requirements
+### Run
 **0. Requirements**
   ```bash
   matplotlib==3.3.4
