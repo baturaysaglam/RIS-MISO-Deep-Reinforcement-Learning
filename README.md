@@ -5,7 +5,7 @@ PyTorch implementation of the paper [*Reconfigurable Intelligent Surface Assiste
 The algorithm is tested, and the results reproduced on a custom RIS assisted Multiuser MISO environment. 
 
 ### Requirements
-0. Requirements:
+**0. Requirements**
   ```bash
   matplotlib==3.3.4
   numpy==1.21.4
@@ -13,7 +13,7 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
   torch==1.10.0
   ```
   
-1. Installing:
+**1. Installing**
     * Clone this repo: 
     ```bash
     git clone https://github.com/baturaysaglam/RIS-MISO-Deep-Reinforcement-Learning
@@ -23,7 +23,7 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
     ```bash
     pip install -r requirements.txt
     ```
-2. Reproduce the results provided in the paper:
+**2. Reproduce the results provided in the paper**
    * Simply input the figure number in the paper.
    ```
     usage: reproduce.py [-h] [--figure_num {4,5,6,7,8,9,10,11,12}]
@@ -32,7 +32,8 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
     -h, --help            show this help message and exit
     --figure_num {4,5,6,7,8,9,10,11,12} Choose one of figures from the paper to reproduce
    ```
-3. Train the model from scratch:
+**3. Train the model from scratch**
+  * Usage:
    ```
    usage: main.py [-h]
                [--experiment_type {custom,power,rsi_elements,learning_rate,decay}]
@@ -43,7 +44,9 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
                [--power_t N] [--num_time_steps_per_eps N] [--num_eps N]
                [--awgn_var G] [--exploration_noise G] [--discount G] [--tau G]
                [--lr G] [--decay G]
-
+  ```
+  * Optional arguments:
+  ```
   optional arguments:
     -h, --help            show this help message and exit
     --experiment_type {custom,power,rsi_elements,learning_rate,decay}
