@@ -13,8 +13,8 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
   torch==1.10.0
   ```
   
-**1. Installing**
-    * Clone this repo: 
+**1. Installing** 
+* Clone this repo: 
     ```bash
     git clone https://github.com/baturaysaglam/RIS-MISO-Deep-Reinforcement-Learning
     cd RIS-MISO-Deep-Reinforcement-Learning
