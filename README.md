@@ -85,4 +85,3 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
                           networks (default: 0.001)
     --lr G                Learning rate for the networks (default: 0.001)
     --decay G             Decay rate for the networks (default: 0.00001)
-    ```
