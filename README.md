@@ -5,13 +5,16 @@ PyTorch implementation of [the paper](https://ieeexplore.ieee.org/document/91108
 The algorithm is tested, and the results reproduced on a custom RIS assisted Multiuser MISO environment. 
 
 ### Requirements
-| Python  | 3.8.5 |
-| PyTorch  | 1.8.1 |
-| NumPy  | 1.19.4 |
+0. Requirements:
+  `matplotlib==3.3.4
+   numpy==1.21.4
+   scipy==1.5.4
+   torch==1.10.0`
 
-| matplotlib | | 3.3.4|
-| numpy | 1.21.4 |
-| scipy | 1.5.4 |
-| torch | 1.10.0 |
-| torch | 1.6.0 |
-| numpy | 1.18.1 |
+1. Training:
+    * Prepare training images filelist and shuffle it ([example](https://github.com/JiahuiYu/generative_inpainting/issues/15)).
+    * Modify [inpaint.yml](/inpaint.yml) to set DATA_FLIST, LOG_DIR, IMG_SHAPES and other parameters.
+    * Run `python train.py`.
+2. Resume training:
+    * Modify MODEL_RESTORE flag in [inpaint.yml](/inpaint.yml). E.g., MODEL_RESTORE: 20180115220926508503_places2_model.
+    * Run `python train.py`.
