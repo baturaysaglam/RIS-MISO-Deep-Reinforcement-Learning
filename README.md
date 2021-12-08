@@ -14,7 +14,8 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
   ```
   
 1. Installing:
-    * Clone this repo: ```bash
+    * Clone this repo: 
+    ```bash
     git clone https://github.com/baturaysaglam/RIS-MISO-Deep-Reinforcement-Learning
     cd RIS-MISO-Deep-Reinforcement-Learning
     ```
