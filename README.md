@@ -19,7 +19,7 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
     git clone https://github.com/baturaysaglam/RIS-MISO-Deep-Reinforcement-Learning
     cd RIS-MISO-Deep-Reinforcement-Learning
     ```
-    * Install Python requirements: 
+* Install Python requirements: 
     ```bash
     pip install -r requirements.txt
     ```
