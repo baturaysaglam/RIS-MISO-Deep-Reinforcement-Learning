@@ -25,7 +25,7 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
     ```
 2. Reproduce the results provided in the paper:
    * Simply input the figure number in the paper.
-   ```bash
+   ```
     usage: reproduce.py [-h] [--figure_num {4,5,6,7,8,9,10,11,12}]
 
     optional arguments:
@@ -33,7 +33,7 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
     --figure_num {4,5,6,7,8,9,10,11,12} Choose one of figures from the paper to reproduce
    ```
 3. Train the model from scratch:
-   ```bash
+   ```
    usage: main.py [-h]
                [--experiment_type {custom,power,rsi_elements,learning_rate,decay}]
                [--policy POLICY] [--env ENV] [--seed SEED] [--gpu GPU]
