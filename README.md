@@ -19,7 +19,10 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
     git clone https://github.com/baturaysaglam/RIS-MISO-Deep-Reinforcement-Learning
     cd RIS-MISO-Deep-Reinforcement-Learning
     ```
-    * Install Python requirements: `pip install -r requirements.txt`
+    * Install Python requirements: 
+    ```bash
+    pip install -r requirements.txt
+    ```
 2. Resume training:
     * Modify MODEL_RESTORE flag in [inpaint.yml](/inpaint.yml). E.g., MODEL_RESTORE: 20180115220926508503_places2_model.
     * Run `python train.py`.
