@@ -6,10 +6,10 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
 
 ### Requirements
 0. Requirements:
-  `matplotlib==3.3.4\
-   numpy==1.21.4\
-   scipy==1.5.4\
-   torch==1.10.0`
+  `matplotlib==3.3.4`
+  `numpy==1.21.4`
+  `scipy==1.5.4`
+  `torch==1.10.0`
 
 1. Training:
     * Prepare training images filelist and shuffle it ([example](https://github.com/JiahuiYu/generative_inpainting/issues/15)).
