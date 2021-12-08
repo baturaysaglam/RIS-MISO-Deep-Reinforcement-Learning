@@ -23,6 +23,7 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
     ```bash
     pip install -r requirements.txt
     ```
+    
 **2. Reproduce the results provided in the paper**
    * Usage:
    ```
@@ -34,6 +35,7 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
     -h, --help            show this help message and exit
     --figure_num {4,5,6,7,8,9,10,11,12} Choose one of figures from the paper to reproduce
    ```
+   
 **3. Train the model from scratch**
   * Usage:
    ```
