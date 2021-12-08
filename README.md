@@ -12,11 +12,13 @@ The algorithm is tested, and the results reproduced on a custom RIS assisted Mul
   scipy==1.5.4
   torch==1.10.0
   ```
-
-1. Training:
-    * Prepare training images filelist and shuffle it ([example](https://github.com/JiahuiYu/generative_inpainting/issues/15)).
-    * Modify [inpaint.yml](/inpaint.yml) to set DATA_FLIST, LOG_DIR, IMG_SHAPES and other parameters.
-    * Run `python train.py`.
+  
+1. Installing:
+    * Clone this repo: ```bash
+    git clone https://github.com/baturaysaglam/RIS-MISO-Deep-Reinforcement-Learning
+    cd RIS-MISO-Deep-Reinforcement-Learning
+    ```
+    * Install Python requirements: `pip install -r requirements.txt`
 2. Resume training:
     * Modify MODEL_RESTORE flag in [inpaint.yml](/inpaint.yml). E.g., MODEL_RESTORE: 20180115220926508503_places2_model.
     * Run `python train.py`.
