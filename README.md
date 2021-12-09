@@ -89,6 +89,7 @@ Reproduced figures are found under *./Learning Figures* respective to the figure
                           networks (default: 0.001)
     --lr G                Learning rate for the networks (default: 0.001)
     --decay G             Decay rate for the networks (default: 0.00001)
+    ```
     
 ### Using the Code
 If you use our code, please cite this repository:
