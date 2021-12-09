@@ -101,5 +101,5 @@ If you use our code, please cite this repository:
   publisher = {GitHub},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/baturaysaglam/RIS-MISO-Deep-Reinforcement-Learning}},
-  commit = {90ece0055727c177088a6830e8adac8d2691ac39}
+  commit = {8c15c4658051cc2dc18a81591126a3686923d4c2}
 }
