@@ -37,8 +37,9 @@ if __name__ == "__main__":
     parser.add_argument("--num_users", default=4, type=int, metavar='N', help='Number of users')
     parser.add_argument("--power_t", default=30, type=float, metavar='N', help='Transmission power for the constrained optimization in dB')
     parser.add_argument("--num_time_steps_per_eps", default=20000, type=int, metavar='N', help='Maximum number of steps per episode (default: 20000)')
-    parser.add_argument("--num_eps", default=5000, type=int, metavar='N', help='Maximum number of episodes (default: 5000)')
+    parser.add_argument("--num_eps", default=10, type=int, metavar='N', help='Maximum number of episodes (default: 5000)')
     parser.add_argument("--awgn_var", default=1e-2, type=float, metavar='G', help='Variance of the additive white Gaussian noise (default: 0.01)')
+    parser.add_argument("--channel_est_error", default=False, type=bool, help='Noisy channel estimate? (default: False)')
 
     # Algorithm-specific parameters
     parser.add_argument("--exploration_noise", default=0.0, metavar='G', help='Std of Gaussian exploration noise')
@@ -145,6 +146,7 @@ if __name__ == "__main__":
 
             if done:
                 print(f"\nTotal T: {t + 1} Episode Num: {episode_num + 1} Episode T: {episode_time_steps} Max. Reward: {max_reward:.3f}\n")
+
                 # Reset the environment
                 state, done = env.reset(), False
                 episode_reward = 0
