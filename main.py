@@ -36,7 +36,7 @@ if __name__ == "__main__":
     parser.add_argument("--num_RIS_elements", default=4, type=int, metavar='N', help='Number of RIS elements')
     parser.add_argument("--num_users", default=4, type=int, metavar='N', help='Number of users')
     parser.add_argument("--power_t", default=30, type=float, metavar='N', help='Transmission power for the constrained optimization in dB')
-    parser.add_argument("--num_time_steps_per_eps", default=20000, type=int, metavar='N', help='Maximum number of steps per episode (default: 20000)')
+    parser.add_argument("--num_time_steps_per_eps", default=10000, type=int, metavar='N', help='Maximum number of steps per episode (default: 20000)')
     parser.add_argument("--num_eps", default=10, type=int, metavar='N', help='Maximum number of episodes (default: 5000)')
     parser.add_argument("--awgn_var", default=1e-2, type=float, metavar='G', help='Variance of the additive white Gaussian noise (default: 0.01)')
     parser.add_argument("--channel_est_error", default=False, type=bool, help='Noisy channel estimate? (default: False)')
@@ -157,7 +157,7 @@ if __name__ == "__main__":
 
                 instant_rewards.append(eps_rewards)
 
-                np.save(f"./Learning Curves/{args.experiment_type}/{file_name}", instant_rewards)
+                np.save(f"./Learning Curves/{args.experiment_type}/{file_name}_episode_{episode_num + 1}", instant_rewards)
 
     if args.save_model:
         agent.save(f"./Models/{file_name}")
